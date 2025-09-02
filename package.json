@@ -1,0 +1,33 @@
+{
+  "name": "vite-plugin-css-splitter-workspace",
+  "version": "0.0.1",
+  "description": "Split CSS per entry/chunk in Vite library mode with auto imports.",
+  "private": true,
+  "license": "MIT",
+  "author": "Your Name <you@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myjeong19/vite-plugin-css-splitter"
+  },
+  "bugs": {
+    "url": "https://github.com/myjeong19/vite-plugin-css-splitter/issues"
+  },
+  "homepage": "https://github.com/myjeong19/vite-plugin-css-splitter#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "dev": "pnpm --filter playground dev",
+    "build": "pnpm --filter core build",
+    "lint": "biome lint .",         
+    "format": "biome format . --write",
+    "check": "biome check .",         
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.2",
+    "typescript": "^5.9.2"
+  }
+}

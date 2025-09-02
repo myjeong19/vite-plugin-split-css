@@ -1,0 +1,65 @@
+{
+  "name": "vite-plugin-css-splitter",
+  "version": "0.0.1",
+  "description": "Split CSS per entry/chunk in Vite library mode with auto imports.",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "plugin",
+    "css",
+    "split",
+    "splitter",
+    "chunk",
+    "code-splitting",
+    "library",
+    "library-mode",
+    "ui-library",
+    "styles",
+    "auto-import"
+  ],
+  "license": "MIT",
+  "author": "myjeong19 <myjeong19@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myjeong19/vite-plugin-css-splitter"
+  },
+  "bugs": {
+    "url": "https://github.com/myjeong19/vite-plugin-css-splitter/issues"
+  },
+  "homepage": "https://github.com/myjeong19/vite-plugin-css-splitter#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.2",
+    "@types/node": "^22.7.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
+  },
+  "peerDependencies": {
+    "vite": ">=5 <8"
+  }
+}
